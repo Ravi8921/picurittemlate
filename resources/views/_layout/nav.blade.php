@@ -106,6 +106,36 @@
                     </li>
                 </ul>
             </li>
+
+            <li>
+                <a href="#courses">
+                    <i data-acorn-icon="online-class" class="icon" data-acorn-size="18"></i>
+                    <span class="label">Advertisments</span>
+                </a>
+                <ul id="courses">
+                    <li>
+                        <a href="/Course/Explore">
+                            <span class="label">Explore</span>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="/Course/List">
+                            <span class="label">List</span>
+                        </a>
+                    </li> -->
+                   
+                    <li>
+                        <a href="/Course/Detail">
+                            <span class="label">Detail</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+
+
+
+
+
             <li>
                 <a href="#courses">
                     <i data-acorn-icon="online-class" class="icon" data-acorn-size="18"></i>
@@ -117,11 +147,11 @@
                             <span class="label">Explore</span>
                         </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="/Course/List">
                             <span class="label">List</span>
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="/Course/Detail">
                             <span class="label">Detail</span>

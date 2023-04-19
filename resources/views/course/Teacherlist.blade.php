@@ -45,10 +45,10 @@
             <i data-acorn-icon="search"></i>
           </span>
                     </div>
-                    <button type="button" class="btn btn-outline-primary btn-icon btn-icon-start ms-1">
+                    <!-- <button type="button" class="btn btn-outline-primary btn-icon btn-icon-start ms-1">
                         <i data-acorn-icon="sort"></i>
                         <span>Sort</span>
-                    </button>
+                    </button> -->
                 </div>
             </div>
         </div>

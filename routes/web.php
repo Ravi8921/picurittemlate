@@ -33,6 +33,7 @@ Route::prefix('Course')->group(function () {
     Route::redirect('/', '/Course/Explore');
     Route::view('Explore', 'course/explore');
     Route::view('List', 'course/list');
+    Route::view('TeacherList', 'course/TeacherList');
     Route::view('Detail', 'course/detail');
 });
 
