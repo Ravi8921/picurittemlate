@@ -22,236 +22,6 @@
     <script src="/js/pages/dashboard.elearning.js"></script>
 @endsection
 
-
-<style>
-   /* html, body {
-  background-color: #222;
-  font-family: 'Helvetica Neue', Helvetica, sans-serif;
-  color: rgba(255,255,255,0.75);
-} */
-
-.headerr {
-  margin: 60px auto 0;
-  width: 550px;
-  text-align: center;
-  font-size: 36px;
-}
-.base {
-  position: absolute;
-  bottom: 0;
-  left: -35px;
-  width: 825px;
-  height: 20px;
-  background-color: rgba(255,255,255,0.05);
-  -moz-transform: skew(45deg);
-  -o-transform: skew(45deg);
-  -webkit-transform: skew(45deg);
-}
-
-.chart-container {
-  position: relative;
-  z-index: 0;
-  margin: 100px auto 0;
-  width: 800px;
-  height: 500px;
-  /*border: solid 1px #bbb;*/
-  background-color: rgba(255,255,255,0.055);
-/*  -webkit-box-shadow: 0 8px 6px -6px #444;
-*/}
-
-.chart-container:after {
-  content:"";
-  position: absolute;
-  top: -15px;
-  left: -8px;
-  height: 15px;
-  width: 800px;
-  background-color: rgba(255,255,255,0.055);
-  -moz-transform: skew(45deg);
-  -o-transform: skew(45deg);
-  -webkit-transform: skew(45deg);
-  transform: skew(45deg);
-}
-
-.chart-container > table {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -999;
-  width: 100%;
-  height: 100%;
-}
-
-.chart-container table  tr  td {
-  width: 100px;
-  height: 98x;
-  border: solid 1px  rgba(255,255,255,0.05);
-
-}
-
-.meter {
-  position: relative;
-  top: 0px;
-  left: -30px;
-  height: 500px;
-  width: 30px;
-  background-color: rgba(20,113,163,0.5);
-  border-left: solid 1px rgba(255,255,255,0.5);
-
-}
-
-.meter:before {
-  content: "";
-  position: absolute;
-  top: -7px;
-  left: -15px;
-  width: 15px;
-  height: 500px;
-  background-color: rgba(14,81,117,0.9);
-   -moz-transform: skewY(45deg);
-  -o-transform: skewY(45deg);
-  -webkit-transform: skewY(45deg);
-  transform: skewY(45deg);
-}
-
-.meter:after {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: -8px;
-  width: 30px;
-  height: 15px;
-  background-color: rgba(13,171,217,0.45);
-   -moz-transform: skewX(45deg);
-  -o-transform: skewX(45deg);
-  -webkit-transform: skewX(45deg);
-  transform: skewX(45deg);
-}
-
-.meter li {
-  position: relative;
-  list-style-type: none;
-  height: 99px;
-  border-bottom: solid 1px #0DABD9;
-}
-
-.meter li:before {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: -30px;
-  width: 30px;
-  height: 100%;
-  border-bottom: solid 1px #0DABD9;
-  -moz-transform: skewY(45deg);
-  -o-transform: skewY(45deg);
-  -webkit-transform: skewY(45deg);
-  transform: skewY(45deg);
-}
-
-.meter li:last-child {
-  border-bottom: none;
-}
-
-.meter li:last-child:before {
-  border: 0;
-}
-
-.meter li div {
-  position: absolute;
-  left: -132px;
-  top: 0;
-  padding: 55px 0 0;
-  width: 80px;
-  color: #656565;
-  text-align: right;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 18px;
-  text-transform: uppercase;
-}
-
-
-/* ---------------------
-  Vertical Bars
-----------------------*/
-
-.bar {
-  float: left;
-  position: absolute;
-  bottom: 0;
-  z-index: 99;
-  height: 35%;
-  width: 40px;
-  margin: 0 40px;
-  background-color: rgba(107,255,49,0.35);
-}
-
-.bar:before {
-  content: "";
-  position: absolute;
-  left: -15px;
-  bottom: 7px;
-  height: 100%;
-  width: 15px;
-  background-color: rgba(107,255,49,0.25);
-  -webkit-transform: skewY(45deg);
-}
-
-.bar:after {
-  content: "";
-  position: absolute;
-  top: -15px;
-  left: -8px;
-  width: 40px;
-  height: 15px;
-  background-color: rgba(107,255,49,0.45);
-  -moz-transform: skewX(45deg);
-  -o-transform: skewX(45deg);
-  -webkit-transform: skewX(45deg);
-  transform: skewX(45deg);
-}
-
-.two {
-  left: 12.5%;
-  height: 57%;
-}
-
-.three {
-  left: 25%;
-  height: 85%;
-}
-
-.four {
-  left: 37.5%;
-  height: 35%;
-}
-
-.five {
-  left: 50%;
-  height: 63%;
-}
-
-.six {
-  left: 62.5%;
-  height: 45%;
-}
-
-.seven {
-  left: 75%;
-  height: 15%;
-}
-
-.eight {
-  left: 87.5%;
-  height: 32%;
-}
-
-</style>
-
-
-
-
 @section('content')
     <div class="container">
         <!-- Title and Top Buttons Start -->
@@ -277,22 +47,21 @@
         <div class="row">
             <!-- Continue Learning Start -->
             <div class="col-xl-6 mb-5">
-                <h2 class="small-title">
-</h2>
+                <h2 class="small-title">Continue Learning</h2>
                 <div class="scroll-out">
                     <div class="scroll-by-count" data-count="3">
                         <div class="card mb-2">
                             <div class="row g-0 sh-14">
                                 <div class="col-auto">
                                     <a href="/Course/Detail" class="d-block position-relative h-100">
-                                        <img src="/img/course/small/student.jpg" alt="alternate text" class="card-img card-img-horizontal sw-14 sw-lg-18" />
+                                        <img src="/img/course/small/course-1.webp" alt="alternate text" class="card-img card-img-horizontal sw-14 sw-lg-18" />
                                     </a>
                                 </div>
                                 <div class="col">
                                     <div class="card-body pt-0 pb-0 h-100 d-flex align-items-center">
                                         <div class="w-100">
                                             <div class="d-flex flex-row justify-content-between mb-2">
-                                                <a href="/Course/Detail" class="font-heading mb-1">No of job applied</a>
+                                                <a href="/Course/Detail" class="font-heading mb-1">React Web Developer Course</a>
                                                 <div class="text-muted">67%</div>
                                             </div>
                                             <div class="progress mb-2">
@@ -308,14 +77,14 @@
                             <div class="row g-0 sh-14">
                                 <div class="col-auto">
                                     <a href="/Course/Detail" class="d-block position-relative h-100">
-                                        <img src="/img/course/small/13.jpg" alt="alternate text" class="card-img card-img-horizontal sw-14 sw-lg-18" />
+                                        <img src="/img/course/small/course-2.webp" alt="alternate text" class="card-img card-img-horizontal sw-14 sw-lg-18" />
                                     </a>
                                 </div>
                                 <div class="col">
                                     <div class="card-body pt-0 pb-0 h-100 d-flex align-items-center">
                                         <div class="w-100">
                                             <div class="d-flex flex-row justify-content-between mb-2">
-                                                <a href="/Course/Detail" class="font-heading mb-1">Total no of teacher</a>
+                                                <a href="/Course/Detail" class="font-heading mb-1">Python: From Zero to Expert</a>
                                                 <div class="text-muted">85%</div>
                                             </div>
                                             <div class="progress mb-2">
@@ -331,14 +100,14 @@
                             <div class="row g-0 sh-14">
                                 <div class="col-auto">
                                     <a href="/Course/Detail" class="d-block position-relative h-100">
-                                        <img src="/img/course/small/12.webp" alt="alternate text" class="card-img card-img-horizontal sw-14 sw-lg-18" />
+                                        <img src="/img/course/small/course-3.webp" alt="alternate text" class="card-img card-img-horizontal sw-14 sw-lg-18" />
                                     </a>
                                 </div>
                                 <div class="col">
                                     <div class="card-body pt-0 pb-0 h-100 d-flex align-items-center">
                                         <div class="w-100">
                                             <div class="d-flex flex-row justify-content-between mb-2">
-                                                <a href="/Course/Detail" class="font-heading mb-1">Total no of Students</a>
+                                                <a href="/Course/Detail" class="font-heading mb-1">Learn and Understand NodeJS</a>
                                                 <div class="text-muted">14%</div>
                                             </div>
                                             <div class="progress mb-2">
@@ -354,14 +123,14 @@
                             <div class="row g-0 sh-14">
                                 <div class="col-auto">
                                     <a href="/Course/Detail" class="d-block position-relative h-100">
-                                        <img src="/img/course/small/Employee.jpg" alt="alternate text" class="card-img card-img-horizontal sw-14 sw-lg-18" />
+                                        <img src="/img/course/small/course-4.webp" alt="alternate text" class="card-img card-img-horizontal sw-14 sw-lg-18" />
                                     </a>
                                 </div>
                                 <div class="col">
                                     <div class="card-body pt-0 pb-0 h-100 d-flex align-items-center">
                                         <div class="w-100">
                                             <div class="d-flex flex-row justify-content-between mb-2">
-                                                <a href="/Course/Detail" class="font-heading mb-1">No of Employees</a>
+                                                <a href="/Course/Detail" class="font-heading mb-1">HTML 5 - The Complete Guide</a>
                                                 <div class="text-muted">63%</div>
                                             </div>
                                             <div class="progress mb-2">
@@ -373,7 +142,7 @@
                             </div>
                         </div>
 
-                        <!-- <div class="card mb-2">
+                        <div class="card mb-2">
                             <div class="row g-0 sh-14">
                                 <div class="col-auto">
                                     <a href="/Course/Detail" class="d-block position-relative h-100">
@@ -394,7 +163,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </div> -->
+                        </div>
                     </div>
                 </div>
             </div>
@@ -403,21 +172,6 @@
             <!-- Recommended Courses Start -->
             <div class="col-xl-6 mb-5">
                 <h2 class="small-title">Recommended for You</h2>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
                 <div class="card w-100 sh-50 sh-md-40 h-xl-100-card hover-img-scale-up position-relative">
                     <img src="/img/banner/cta-standard-3.webp" class="card-img h-100 scale position-absolute" alt="card image" />
                     <div class="card-img-overlay d-flex flex-column justify-content-between bg-transparent">
@@ -483,7 +237,7 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <p class="card-text mb-0 d-flex">Employee</p>
+                                        <p class="card-text mb-0 d-flex">Javascript Novice</p>
                                         <p class="text-center mb-0 d-flex text-primary">Level 1</p>
                                     </div>
                                 </div>
@@ -512,7 +266,7 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <p class="card-text mb-0 d-flex">Teachers</p>
+                                        <p class="card-text mb-0 d-flex">CSS Expert</p>
                                         <p class="text-center mb-0 d-flex text-primary">Level 3</p>
                                     </div>
                                 </div>
@@ -541,7 +295,7 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <p class="card-text mb-0 d-flex">Jobseeker</p>
+                                        <p class="card-text mb-0 d-flex">HTML Apprentice</p>
                                         <p class="text-center mb-0 d-flex text-primary">Level 2</p>
                                     </div>
                                 </div>
@@ -570,12 +324,12 @@
                                                 </svg>
                                             </div>
                                         </div>
-                                        <p class="card-text mb-0 d-flex">students</p>
+                                        <p class="card-text mb-0 d-flex">Php Novice</p>
                                         <p class="text-center mb-0 d-flex text-primary">Level 1</p>
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="glide__slide">
+                            <div class="glide__slide">
                                 <div class="card mb-5 sh-25">
                                     <div class="card-body text-center align-items-center d-flex flex-column justify-content-between">
                                         <div class="d-flex sw-6 sh-6 bg-gradient-light mb-4 align-items-center justify-content-center rounded-xl position-relative mt-3">
@@ -603,7 +357,7 @@
                                         <p class="text-center mb-0 d-flex text-primary">Level 2</p>
                                     </div>
                                 </div>
-                            </div> -->
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -612,94 +366,153 @@
         <!-- Achievements End -->
 
         <!-- Trending Courses Start -->
-        <!-- <h2 class="small-title">Trending Courses</h2> -->
-       
-        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-2 g-2 mb-5 mt-5">
-        
-        <div class="col-auto">
-        <h1 class="headerr">Visit And Sales Statistics Graph</h1>
-                                   
-                                </div>
-       <div class="chart-container">
-         <div class="base"></div>
-             <!-- Left Side Meter-->
-         <ul class="meter">
-           <li><div>1000</div></li>
-           <li><div>800</div></li>
-           <li><div>600</div></li>
-           <li><div>400</div></li>
-           <li><div>Less Than 200</div></li>
-         </ul>
-         <!-- Background-Grid -->
-         <table>
-           <tr>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-           </tr>
-           <tr>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-           </tr>
-           <tr>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-           </tr>
-           <tr>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-           </tr>
-           <tr>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-             <td></td>
-           </tr>
-         </table>
-         <!-- End Background Grid -->
-      
-         <div class="bar one"></div>   
-         <div class="bar two"></div>   
-         <div class="bar three"></div>
-         <div class="bar four"></div>   
-         <div class="bar five"></div>   
-         <div class="bar six"></div>
-         <div class="bar seven"></div>   
-         <div class="bar eight"></div> 
-       </div>
-     
-          
+        <h2 class="small-title">Trending Courses</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-xl-5 g-2 mb-5">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/img/course/small/course-4.webp" class="card-img-top sh-22" alt="card image" />
+                    <div class="card-body">
+                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Introduction to Bread Making</a></h5>
+                    </div>
+                    <div class="card-footer border-0 pt-0">
+                        <div class="mb-2">
+                            <div class="br-wrapper br-theme-cs-icon d-inline-block">
+                                <select class="rating" name="rating" autocomplete="off" data-readonly="true" data-initial-rating="5">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="text-muted d-inline-block text-small align-text-top">(39)</div>
+                        </div>
+                        <div class="card-text mb-0">
+                            <div class="text-muted text-overline text-small">
+                                <del>$ 42.25</del>
+                            </div>
+                            <div>$ 27.50</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/img/course/small/course-5.webp" class="card-img-top sh-22" alt="card image" />
+                    <div class="card-body">
+                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">14 Facts About Sugar</a></h5>
+                    </div>
+                    <div class="card-footer border-0 pt-0">
+                        <div class="mb-2">
+                            <div class="br-wrapper br-theme-cs-icon d-inline-block">
+                                <select class="rating" name="rating" autocomplete="off" data-readonly="true" data-initial-rating="5">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="text-muted d-inline-block text-small align-text-top">(221)</div>
+                        </div>
+                        <div class="card-text mb-0">
+                            <div class="text-muted text-overline text-small">
+                                <del>$ 36.50</del>
+                            </div>
+                            <div>$ 15.25</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <span class="badge rounded-pill bg-primary me-1 position-absolute e-3 t-3 z-index-1">POPULAR</span>
+                    <img src="/img/course/small/course-6.webp" class="card-img-top sh-22" alt="card image" />
+                    <div class="card-body">
+                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Apple Cake Recipe</a></h5>
+                    </div>
+                    <div class="card-footer border-0 pt-0">
+                        <div class="mb-2">
+                            <div class="br-wrapper br-theme-cs-icon d-inline-block">
+                                <select class="rating" name="rating" autocomplete="off" data-readonly="true" data-initial-rating="5">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="text-muted d-inline-block text-small align-text-top">(572)</div>
+                        </div>
+                        <div class="card-text mb-0">
+                            <div class="text-muted text-overline text-small">
+                                <del>$ 51.00</del>
+                            </div>
+                            <div>$ 36.80</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="/img/course/small/course-7.webp" class="card-img-top sh-22" alt="card image" />
+                    <div class="card-body">
+                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Dough for the Molds</a></h5>
+                    </div>
+                    <div class="card-footer border-0 pt-0">
+                        <div class="mb-2">
+                            <div class="br-wrapper br-theme-cs-icon d-inline-block">
+                                <select class="rating" name="rating" autocomplete="off" data-readonly="true" data-initial-rating="5">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="text-muted d-inline-block text-small align-text-top">(25)</div>
+                        </div>
+                        <div class="card-text mb-0">
+                            <div class="text-muted text-overline text-small">
+                                <del>$ 18.25</del>
+                            </div>
+                            <div>$ 11.00</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col d-none d-xl-block">
+                <div class="card h-100">
+                    <img src="/img/course/small/course-9.webp" class="card-img-top sh-22" alt="card image" />
+                    <div class="card-body">
+                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Fruit Decorations</a></h5>
+                    </div>
+                    <div class="card-footer border-0 pt-0">
+                        <div class="mb-2">
+                            <div class="br-wrapper br-theme-cs-icon d-inline-block">
+                                <select class="rating" name="rating" autocomplete="off" data-readonly="true" data-initial-rating="5">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <div class="text-muted d-inline-block text-small align-text-top">(472)</div>
+                        </div>
+                        <div class="card-text mb-0">
+                            <div class="text-muted text-overline text-small">
+                                <del>$ 24.00</del>
+                            </div>
+                            <div>$ 14.90</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- Trending Courses End -->
 
-       
+
         <div class="row">
             <!-- Related Subjects Start -->
             <div class="col-xl-4 mb-5">
@@ -708,36 +521,36 @@
                     <div class="col-6 col-xl-6 sh-19">
                         <div class="card h-100 hover-scale-up">
                             <a class="card-body text-center" href="/Course/List">
-                                <!-- <i data-acorn-icon="cupcake" class="text-primary"></i> -->
-                                <p class="heading mt-3 text-body">Weekly Sales</p>
-                                <div class="text-extra-small fw-medium text-muted">Increased by 60%</div>
+                                <i data-acorn-icon="cupcake" class="text-primary"></i>
+                                <p class="heading mt-3 text-body">Cupcakes</p>
+                                <div class="text-extra-small fw-medium text-muted">14 COURSES</div>
                             </a>
                         </div>
                     </div>
                     <div class="col-6 col-xl-6 sh-19">
                         <div class="card h-100 hover-scale-up">
                             <a class="card-body text-center" href="/Course/List">
-                                <!-- <i data-acorn-icon="loaf" class="text-primary"></i> -->
-                                <p class="heading mt-3 text-body">Weekly Orders</p>
-                                <div class="text-extra-small fw-medium text-muted">Decreased by 10%</div>
+                                <i data-acorn-icon="loaf" class="text-primary"></i>
+                                <p class="heading mt-3 text-body">Breads</p>
+                                <div class="text-extra-small fw-medium text-muted">3 COURSES</div>
                             </a>
                         </div>
                     </div>
                     <div class="col-6 col-xl-6 sh-19">
                         <div class="card h-100 hover-scale-up">
                             <a class="card-body text-center" href="/Course/List">
-                                <!-- <i data-acorn-icon="radish" class="text-primary"></i> -->
-                                <p class="heading mt-3 text-body">Visitors Online</p>
-                                <div class="text-extra-small fw-medium text-muted">Decreased by 10%</div>
+                                <i data-acorn-icon="radish" class="text-primary"></i>
+                                <p class="heading mt-3 text-body">Vegetables</p>
+                                <div class="text-extra-small fw-medium text-muted">8 COURSES</div>
                             </a>
                         </div>
                     </div>
                     <div class="col-6 col-xl-6 sh-19">
                         <div class="card h-100 hover-scale-up">
                             <a class="card-body text-center" href="/Course/List">
-                                <!-- <i data-acorn-icon="banana" class="text-primary"></i> -->
-                                <p class="heading mt-3 text-body">Today Online </p>
-                                <div class="text-extra-small fw-medium text-muted"> Increased by 12%</div>
+                                <i data-acorn-icon="banana" class="text-primary"></i>
+                                <p class="heading mt-3 text-body">Fruits</p>
+                                <div class="text-extra-small fw-medium text-muted">9 COURSES</div>
                             </a>
                         </div>
                     </div>
@@ -760,7 +573,7 @@
                                 >
                                     <span class="icon"></span>
                                 </div>
-                                <span class="text d-flex align-middle text-alternate align-items-center text-small">Employee</span>
+                                <span class="text d-flex align-middle text-alternate align-items-center text-small">Bread</span>
                                 <span class="value d-flex align-middle text-body align-items-center cta-4">300</span>
                             </div>
                         </div>

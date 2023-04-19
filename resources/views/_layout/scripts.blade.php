@@ -1,6 +1,7 @@
 <!-- Vendor Scripts Start -->
 <script src="/js/vendor/jquery-3.5.1.min.js"></script>
 <script src="/js/vendor/bootstrap.bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
 <script src="/js/vendor/OverlayScrollbars.min.js"></script>
 <script src="/js/vendor/autoComplete.min.js"></script>
 <script src="/js/vendor/clamp.min.js"></script>

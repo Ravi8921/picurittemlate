@@ -1,6 +1,6 @@
 @php
     $html_tag_data = [];
-    $title = 'Advertisments';
+    $title = 'Course Explore';
     $description= 'Acorn elearning platform course explore.';
 @endphp
 @extends('layout',['html_tag_data'=>$html_tag_data, 'title'=>$title, 'description'=>$description,])
@@ -42,7 +42,7 @@
             <h2 class="small-title">Popular</h2>
             <div class="mt-n1">
                 <button class="btn btn-icon btn-icon-end btn-background pe-0 pt-0" type="button">
-                 <a  href="/Course/TeacherList">View All</a>
+                    <span>View All</span>
                     <i data-acorn-icon="chevron-right"></i>
                 </button>
             </div>
@@ -50,11 +50,9 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 mb-5">
             <div class="col">
                 <div class="card h-100">
-                    <img src="/img/course/small/phy.jpg" class="card-img-top sh-22" alt="card image" />
+                    <img src="/img/course/small/course-1.webp" class="card-img-top sh-22" alt="card image" />
                     <div class="card-body">
-                        <h1>Deepak S.
-4+ years experience.</h1>
-                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Mathematics is not about number, equations or computation and algorithms, It is about understanding.</a></h5>
+                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Advanced React Web Developer Course</a></h5>
                     </div>
                     <div class="card-footer border-0 pt-0">
                         <div class="mb-2">
@@ -82,10 +80,7 @@
                 <div class="card h-100">
                     <img src="/img/course/small/course-2.webp" class="card-img-top sh-22" alt="card image" />
                     <div class="card-body">
-                        <h1>Connect with Sudipta</h1>
-                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">
-
-Chat with Sudipta to see if they meet your tutoring needs. You can use our auto-suggestions to get the conversation going, or simply type your own message.</a></h5>
+                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Python for Beginners: From Zero to Expert</a></h5>
                     </div>
                     <div class="card-footer border-0 pt-0">
                         <div class="mb-2">
@@ -111,10 +106,9 @@ Chat with Sudipta to see if they meet your tutoring needs. You can use our auto-
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="/img/course/small/chem.webp" class="card-img-top sh-22" alt="card image" />
+                    <img src="/img/course/small/course-3.webp" class="card-img-top sh-22" alt="card image" />
                     <div class="card-body">
-                    <h1>An introduction to the main element of our day to day life.</h1>
-                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">I have Masters in Chemistry. I love to deal with chemicals and intersted in knowing chemistry in everyday life so i chose to pursue my education in chemistry. I love to teach students so that my knowledge regarding my subject can help others yo ehance theirs.</a></h5>
+                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Learn and Understand NodeJS</a></h5>
                     </div>
                     <div class="card-footer border-0 pt-0">
                         <div class="mb-2">
@@ -140,11 +134,9 @@ Chat with Sudipta to see if they meet your tutoring needs. You can use our auto-
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <img src="/img/course/small/bio.webp" class="card-img-top sh-22" alt="card image" />
+                    <img src="/img/course/small/course-4.webp" class="card-img-top sh-22" alt="card image" />
                     <div class="card-body">
-                    <h1>Connect with subhdipa</h1>
-                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Biology - Everything from cell to organism Anatomy and physiology of human beings Chemistry - Carbon and its compounds Balancing reactions English (Reading and writing) - Improve vocabulary, Reading and writing skills Maths - Every concept for the students from pre primary to grade 8
-</a></h5>
+                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">HTML 5 - The Complete Guide for Every Level</a></h5>
                     </div>
                     <div class="card-footer border-0 pt-0">
                         <div class="mb-2">
@@ -173,172 +165,123 @@ Chat with Sudipta to see if they meet your tutoring needs. You can use our auto-
 
         <!-- Trending Start -->
         <div class="d-flex justify-content-between">
-            <h2 class="small-title">Jobseeker</h2>
+            <h2 class="small-title">Trending</h2>
             <div class="mt-n1">
-
-            <button class="btn btn-icon btn-icon-end btn-background pe-0 pt-0" type="button">
-                 <a  href="/Course/List">View All</a>
+                <button class="btn btn-icon btn-icon-end btn-background pe-0 pt-0" type="button">
+                    <span>View All</span>
                     <i data-acorn-icon="chevron-right"></i>
                 </button>
-
-<!-- 
-                <button class="btn btn-icon btn-icon-end btn-background pe-0 pt-0" type="button">
-                <a href="">
-                            <span class="label">View All</span>
-                        </a>
-                
-                    <i data-acorn-icon="chevron-right"></i>
-                </button> -->
             </div>
         </div>
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-3 mb-5">
             <div class="col">
                 <div class="card h-100">
-                    <!-- <img src="/img/course/small/course-5.webp" class="card-img-top sh-22" alt="card image" /> -->
+                    <img src="/img/course/small/course-5.webp" class="card-img-top sh-22" alt="card image" />
                     <div class="card-body">
-                    <h1>Digital Marketing Specialist</h1>
-                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">APlan, design, and execute online customer acquisition campaigns
-Scale and manage PPC and PPM campaigns across multiple channels like Google, Facebook, LinkedIn, etc.
-</a></h5>
+                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Advanced Techniques with Gulpjs</a></h5>
                     </div>
                     <div class="card-footer border-0 pt-0">
                         <div class="mb-2">
-                       
                             <div class="br-wrapper br-theme-cs-icon d-inline-block">
-                              
+                                <select class="rating" name="rating" autocomplete="off" data-readonly="true" data-initial-rating="5">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
                             </div>
-                             <div class="text-muted d-inline-block  align-text-top"> Job-type :-</div>
-                            <div class="text-muted d-inline-block  align-text-top"> Full time</div>
+                            <div class="text-muted d-inline-block text-small align-text-top">(53)</div>
                         </div>
                         <div class="card-text mb-0">
                             <div class="text-muted text-overline text-small">
-                            <div class="text-muted  text-large">
-                              Salary
+                                <del>$ 32.50</del>
                             </div>
-                            <div>Rs 15000 -20000 </div>
-                            </div>
-                            <div class="text-muted d-inline-block  align-text-top"> Location :-</div>
-                            <div class="text-muted d-inline-block  align-text-top">Patna</div> 
-                    </div>
+                            <div>$ 24.80</div>
                         </div>
-                       
-                      
-                            
-                           
+                    </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <!-- <img src="/img/course/small/course-6.webp" class="card-img-top sh-22" alt="card image" /> -->
+                    <img src="/img/course/small/course-6.webp" class="card-img-top sh-22" alt="card image" />
                     <div class="card-body">
-                        <h1>
-Senior Officer, CDD</h1>
-                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Primary responsibility for ensuring accurate and timely completion of CDD applications / renewals,identification of required documentation,sourcing of underlying documents,and maintenance of eCDD static data. People and Talent</a></h5>
+                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Introduction to Sass with Full Website</a></h5>
                     </div>
                     <div class="card-footer border-0 pt-0">
                         <div class="mb-2">
                             <div class="br-wrapper br-theme-cs-icon d-inline-block">
                                 <select class="rating" name="rating" autocomplete="off" data-readonly="true" data-initial-rating="3">
-                                    <!-- <option value="1">1</option>
+                                    <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
-                                    <option value="5">5</option> -->
+                                    <option value="5">5</option>
                                 </select>
                             </div>
-                            <div class="text-muted d-inline-block  align-text-top"> Job-type :-</div>
-                            <div class="text-muted d-inline-block  align-text-top"> Full time</div>
+                            <div class="text-muted d-inline-block text-small align-text-top">(67)</div>
                         </div>
                         <div class="card-text mb-0">
                             <div class="text-muted text-overline text-small">
-                            <div class="text-muted  text-large">
-                              Salary
+                                <del>$ 27.00</del>
                             </div>
-                            <div>Rs 15000 -20000 </div>
-                            </div>
-                             <div class="text-muted d-inline-block  align-text-top"> Location :-</div>
-                            <div class="text-muted d-inline-block  align-text-top"> patna</div>
-                           
+                            <div>$ 13.20</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <!-- <img src="/img/course/small/course-7.webp" class="card-img-top sh-22" alt="card image" /> -->
+                    <img src="/img/course/small/course-7.webp" class="card-img-top sh-22" alt="card image" />
                     <div class="card-body">
-                         <h1>   
-Senior Technical Specialist
-</h1>
-                 
-                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Re-engineer legacy applications and build state of the art platform
-Envision Credit Origination 2.0 platform and align it with Bank s NextGen technology vision
-Consistently leads delivery of valuable features
-</a></h5>
+                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Java - The Complete Guide</a></h5>
                     </div>
                     <div class="card-footer border-0 pt-0">
                         <div class="mb-2">
                             <div class="br-wrapper br-theme-cs-icon d-inline-block">
                                 <select class="rating" name="rating" autocomplete="off" data-readonly="true" data-initial-rating="5">
-                                    <!-- <option value="1">1</option>
+                                    <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
-                                    <option value="5">5</option> -->
+                                    <option value="5">5</option>
                                 </select>
                             </div>
-                            <div class="text-muted d-inline-block  align-text-top"> Job-type :-</div>
-                            <div class="text-muted d-inline-block  align-text-top"> Full time</div>
+                            <div class="text-muted d-inline-block text-small align-text-top">(427)</div>
                         </div>
                         <div class="card-text mb-0">
                             <div class="text-muted text-overline text-small">
-                            <div class="text-muted  text-large">
-                              Salary
+                                <del>$ 48.00</del>
                             </div>
-                            <div>Rs 15000 -20000 </div>
-                            </div>
-                             <div class="text-muted d-inline-block  align-text-top"> Location :-</div>
-                            <div class="text-muted d-inline-block  align-text-top"> patna</div>
-                           
+                            <div>$ 28.80</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div class="col">
                 <div class="card h-100">
-                    <!-- <img src="/img/course/small/course-8.webp" class="card-img-top sh-22" alt="card image" /> -->
+                    <img src="/img/course/small/course-8.webp" class="card-img-top sh-22" alt="card image" />
                     <div class="card-body">
-                    <h1>   Exec, Business Development
-</h1>
-                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">Meet the business objectives initiated by the respective country Priority Clients business
-Customer focused need-based selling
-Deepen customer relationship and maximize penetration
-</a></h5>
+                        <h5 class="heading mb-0"><a href="/Course/Detail" class="body-link stretched-link">PHP for Beginners with CMS Project</a></h5>
                     </div>
                     <div class="card-footer border-0 pt-0">
                         <div class="mb-2">
                             <div class="br-wrapper br-theme-cs-icon d-inline-block">
                                 <select class="rating" name="rating" autocomplete="off" data-readonly="true" data-initial-rating="5">
-                                    <!-- <option value="1">1</option>
+                                    <option value="1">1</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
-                                    <option value="5">5</option> -->
+                                    <option value="5">5</option>
                                 </select>
                             </div>
-                            <div class="text-muted d-inline-block  align-text-top"> Job-type :-</div>
-                            <div class="text-muted d-inline-block  align-text-top"> Full time</div>
+                            <div class="text-muted d-inline-block text-small align-text-top">(84)</div>
                         </div>
                         <div class="card-text mb-0">
-                            <div class="text-muted text-overline text-small ">
-                            <div class="text-muted  d-inline-block text-large">
-                              Salary
+                            <div class="text-muted text-overline text-small">
+                                <del>$ 32.25</del>
                             </div>
-                            <div>Rs2000-24000</div>
-                            </div>
-                            <div class="text-muted d-inline-block  align-text-top"> Location :-</div>
-                            <div class="text-muted d-inline-block  align-text-top">Delhi</div>
-                           
+                            <div>$ 24.50</div>
                         </div>
                     </div>
                 </div>
@@ -347,7 +290,7 @@ Deepen customer relationship and maximize penetration
         <!-- Trending End -->
 
         <!-- Paths Start -->
-        <!-- <h2 class="small-title">Paths</h2>
+        <h2 class="small-title">Paths</h2>
         <div class="row g-3 row-cols-1 row-cols-xl-2 row-cols-xxl-4 mb-5">
             <div class="col">
                 <div class="card h-100">
@@ -401,7 +344,7 @@ Deepen customer relationship and maximize penetration
                     </div>
                 </div>
             </div>
-        </div> -->
+        </div>
         <!-- Paths End -->
 
         <h2 class="small-title">Sale</h2>

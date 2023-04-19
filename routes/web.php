@@ -33,22 +33,37 @@ Route::prefix('Course')->group(function () {
     Route::redirect('/', '/Course/Explore');
     Route::view('Explore', 'course/explore');
     Route::view('List', 'course/list');
-    Route::view('TeacherList', 'course/TeacherList');
     Route::view('Detail', 'course/detail');
 });
+
 
 Route::prefix('Users')->group(function () {
     Route::redirect('/', '/Users/List');
     Route::view('List', 'quiz/list');
     Route::view('Detail', 'quiz/detail');
     Route::view('Result', 'quiz/result');
+
 });
 Route::prefix('Blogs')->group(function () {
     Route::redirect('/', '/blogs/List');
     Route::view('List', 'blogs/list');
     Route::view('Detail', 'blogs/detail');
-   
+
 });
+Route::prefix('Chats')->group(function () {
+    Route::redirect('/', '/apps/chats');
+    Route::view('chats', 'apps/chats');
+    Route::view('mails', 'apps/mails');
+    Route::view('manager', 'apps/manager');
+
+});
+
+// Route::prefix('Manager')->group(function () {
+//     Route::redirect('/', '/managerdetails/manager');
+//     Route::view('Manager', 'managerdetails/manager');
+// });
+
+
 
 Route::prefix('Path')->group(function () {
     Route::redirect('/', '/Path/List');

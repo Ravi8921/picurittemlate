@@ -1,81 +1,48 @@
-/**
- *
- * Helpers
- * Static helper methods.
- *
- */
-
 class Helpers {
-  // A basic debounce function for events like resize, keydown and etc.
-  static Debounce(func, wait, immediate) {
-    var timeout;
-    return function () {
-      var context = this,
-        args = arguments;
-      var later = function () {
-        timeout = null;
-        if (!immediate) func.apply(context, args);
-      };
-      var callNow = immediate && !timeout;
-      clearTimeout(timeout);
-      timeout = setTimeout(later, wait);
-      if (callNow) func.apply(context, args);
-    };
-  }
-
-  // Checks the given array and returns a value plus one from the greatest prop value
-  static NextId(data, prop) {
-    if (!data) {
-      console.error('NextId data is null');
-      return;
-    }
-    const max = data.reduce(function (prev, current) {
-      if (+parseInt(current[prop]) > +parseInt(prev[prop])) {
-        return current;
-      } else {
-        return prev;
+  static Debounce(t, e, r) {
+      var n;
+      return function() {
+          var s = this
+            , o = arguments
+            , a = function() {
+              n = null,
+              r || t.apply(s, o)
+          }
+            , c = r && !n;
+          clearTimeout(n),
+          n = setTimeout(a, e),
+          c && t.apply(s, o)
       }
-    });
-    return parseInt(max[prop]) + 1;
   }
-
-  // Fetches data from the path parameter and fires onComplete callback with the json formatted data
-  static FetchJSON(path, onComplete) {
-    fetch(path)
-      .then((response) => {
-        if (!response.ok) {
-          throw new Error('Network response was not ok');
-        }
-        return response;
-      })
-      .then((response) => response.json())
-      .then((data) => onComplete(data))
-      .catch((error) => {
-        console.error('Problem with the fetching JSON data: ', error);
-      });
+  static NextId(t, e) {
+      if (!t)
+          return void console.error("NextId data is null");
+      const r = t.reduce((function(t, r) {
+          return +parseInt(r[e]) > +parseInt(t[e]) ? r : t
+      }
+      ));
+      return parseInt(r[e]) + 1
   }
-
-  // Adds commas to thousand
-  static AddCommas(nStr) {
-    nStr += '';
-    var x = nStr.split('.');
-    var x1 = x[0];
-    var x2 = x.length > 1 ? '.' + x[1] : '';
-    var rgx = /(\d+)(\d{3})/;
-    while (rgx.test(x1)) {
-      x1 = x1.replace(rgx, '$1' + ',' + '$2');
-    }
-    return x1 + x2;
+  static FetchJSON(t, e) {
+      fetch(t).then((t=>{
+          if (!t.ok)
+              throw new Error("Network response was not ok");
+          return t
+      }
+      )).then((t=>t.json())).then((t=>e(t))).catch((t=>{
+          console.error("Problem with the fetching JSON data: ", t)
+      }
+      ))
   }
-
-  // If the project is run in a subdirectory and absolute-path is used, this function adds the data-url-prefix value defined in the html element to the paths.
-  static UrlFix(paramPath) {
-    const dataPrefix = document.documentElement.dataset.urlPrefix;
-    if (!dataPrefix) {
-      return paramPath;
-    }
-    const prefix = dataPrefix.endsWith('/') ? dataPrefix : `${dataPrefix}/`;
-    const path = paramPath.startsWith('/') ? paramPath.slice(1, paramPath.length) : paramPath;
-    return `${prefix}${path}`;
+  static AddCommas(t) {
+      for (var e = (t += "").split("."), r = e[0], n = e.length > 1 ? "." + e[1] : "", s = /(\d+)(\d{3})/; s.test(r); )
+          r = r.replace(s, "$1,$2");
+      return r + n
+  }
+  static UrlFix(t) {
+      const e = document.documentElement.dataset.urlPrefix;
+      if (!e)
+          return t;
+      return `${e.endsWith("/") ? e : `${e}/`}${t.startsWith("/") ? t.slice(1, t.length) : t}`
   }
 }

@@ -119,7 +119,11 @@ class Scripts {
   // Settings initialization
   _initSettings() {
     if (typeof Settings !== 'undefined') {
-      const settings = new Settings({attributes: {placement: 'vertical', layout: 'boxed', behaviour: 'unpinned', color: 'dark-purple' }, showSettings: true, storagePrefix: 'acorn-elearning-portal-'});
+      const settings = new Settings({
+        attributes: {placement: 'vertical', layout: 'boxed', behaviour: 'unpinned', color: 'dark-purple'},
+        showSettings: true,
+        storagePrefix: 'acorn-elearning-portal-',
+      });
     }
   }
 

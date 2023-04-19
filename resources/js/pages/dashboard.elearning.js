@@ -70,7 +70,7 @@ class ElearningDashboard {
               borderColor: [Globals.primary, Globals.secondary, Globals.quaternary],
             },
           ],
-          labels: ['Student', 'Teacher', 'Employees'],
+          labels: ['Breads', 'Cakes', 'Sandwich'],
           icons: ['loaf', 'cupcake', 'burger'],
         },
         options: {

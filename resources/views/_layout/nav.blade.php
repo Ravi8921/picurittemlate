@@ -109,7 +109,7 @@
             <li>
                 <a href="#courses">
                     <i data-acorn-icon="online-class" class="icon" data-acorn-size="18"></i>
-                    <span class="label">Advertisments</span>
+                    <span class="label">Courses</span>
                 </a>
                 <ul id="courses">
                     <li>
@@ -117,12 +117,11 @@
                             <span class="label">Explore</span>
                         </a>
                     </li>
-                    <!-- <li>
+                    <li>
                         <a href="/Course/List">
                             <span class="label">List</span>
                         </a>
-                    </li> -->
-                   
+                    </li>
                     <li>
                         <a href="/Course/Detail">
                             <span class="label">Detail</span>
@@ -149,6 +148,14 @@
                    
                 </ul>
             </li>
+
+
+            
+
+
+
+
+
             <li>
                 <a href="#blogs">
                     <i data-acorn-icon="quiz" class="icon" data-acorn-size="18"></i>
@@ -164,6 +171,54 @@
                    
                 </ul>
             </li>
+            <li>
+                <a href="#chats">
+                    <i data-acorn-icon="quiz" class="icon" data-acorn-size="18"></i>
+                    <span class="label">Records</span>
+                </a>
+                <ul id="chats">
+                    <li>
+                        <a href="/Chats/chats">
+                            <span class="label">chats</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Chats/mails">
+                            <span class="label">mails</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Chats/manager">
+                            <span class="label">Modify manager</span>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </li>
+
+
+            <!-- <li>
+                <a href="#manager">
+                    <i data-acorn-icon="quiz" class="icon" data-acorn-size="18"></i>
+                    <span class="label">Modify manager & employee</span>
+                </a>
+                <ul id="manager">
+                    <li>
+                        <a href="/Manager/manager">
+                            <span class="label">List</span>
+                        </a>
+                    </li>
+                   
+                   
+                </ul>
+            </li> -->
+
+
+
+
+
+
+
             <li>
                 <a href="#paths">
                     <i data-acorn-icon="destination" class="icon" data-acorn-size="18"></i>
