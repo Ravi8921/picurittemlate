@@ -180,11 +180,25 @@
             </li>
 
 
-            
-
-
-
-
+            <li>
+                <a href="#manage">
+                    <i data-acorn-icon="quiz" class="icon" data-acorn-size="18"></i>
+                    <span class="label">Manage</span>
+                </a>
+                <ul id="manage">
+                    <li>
+                        <a href="/Manage/Prices">
+                            <span class="label">Prices</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="/Manage/Coupons">
+                            <span class="label">Coupons</span>
+                        </a>
+                    </li>
+                   
+                </ul>
+            </li>
 
             <li>
                 <a href="#blogs">
