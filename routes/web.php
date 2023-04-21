@@ -45,6 +45,12 @@ Route::prefix('Users')->group(function () {
     Route::view('Result', 'quiz/result');
 
 });
+Route::prefix('Manage')->group(function () {
+    Route::redirect('/', '/manage/prices');
+    Route::view('Prices', 'manage/prices');
+    Route::view('Coupons', 'manage/coupons');
+   
+});
 Route::prefix('Blogs')->group(function () {
     Route::redirect('/', '/blogs/List');
     Route::view('List', 'blogs/list');
